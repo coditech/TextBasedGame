@@ -3,6 +3,7 @@
 
 <head>
     <style>
+
         #storyImg {
             width: 600px;
             height: 350px;
@@ -24,18 +25,26 @@
 
 <body>
     <div class="container">
+        <div class="headerArea">
+        <h1>
+            The Forest
+        </h1>
+        <h3>
+            A Cross Road
+        </h3>
+        </div>
         <div>
-            <img src="roads.png" id="storyImg" />
+            <img src="Images/roads.png" id="storyImg" />
         </div>
         <div>
             <input type="text" id="storyText" value="You have reached a crossroad, do you want to go to the right or to the left?"/>
         </div>
-        <ul>
+        <ul id="options">
             <li>
-                <a href="javascript:alert('Hello World!');">go to the left</a>
+                <a href="">go to the left</a>
             </li>
             <li>
-                <a href="javascript:alert('Hello World!');">go to the right</a>
+                <a href="">go to the right</a>
             </li>
         </ul>
     </div>
