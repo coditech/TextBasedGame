@@ -166,19 +166,18 @@ let options = {
 let allItems = ["sword"];
 let backpack = [];
 
-const a = "blah"
-const text = `blah blah ${a}`
+var storyBox = document.getElementById("storyText");
 
 function chooseOption(x) {
     document.getElementById("storyImage").src = x.imgSrc;
-    document.getElementById("storyText").innerHTML += "<br />" + x.text;
+    storyBox.innerHTML += "<p>" + x.text+"</p>";
     var listOptions = "";
     for (let i = 0; i < x.options.length; i++) {
         const href = `javascript:chooseOption(options['${x.options[i].id}'])`
         const text = x.options[i].text
         listOptions += `<li><a href="${href}">${text}</a></li>`;
     }
-
+    storyBox.scrollTop = storyBox.scrollHeight;
     document.getElementById("options").innerHTML = listOptions;
 }
 chooseOption(options.start);
