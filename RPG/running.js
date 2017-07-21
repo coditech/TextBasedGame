@@ -170,7 +170,7 @@ const a = "blah"
 const text = `blah blah ${a}`
 
 function chooseOption(x) {
-    document.getElementById("storyImg").src = x.imgSrc;
+    document.getElementById("storyImage").src = x.imgSrc;
     document.getElementById("storyText").innerHTML += "<br />" + x.text;
     var listOptions = "";
     for (let i = 0; i < x.options.length; i++) {
