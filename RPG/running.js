@@ -32,7 +32,7 @@ let options = {
             text: "Go back"
         }]
     }
-}
+};
 let allItems = ["sword"];
 let backpack = [];
 
