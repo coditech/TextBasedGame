@@ -171,7 +171,7 @@ const text = `blah blah ${a}`
 
 function chooseOption(x) {
     document.getElementById("storyImg").src = x.imgSrc;
-    document.getElementById("storyText").innerHTML = "<br /> <hr>" + x.text;
+    document.getElementById("storyText").innerHTML += "<br />" + x.text;
     var listOptions = "";
     for (let i = 0; i < x.options.length; i++) {
         const href = `javascript:chooseOption(options['${x.options[i].id}'])`
